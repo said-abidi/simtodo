@@ -5,7 +5,7 @@ Display results in Alfred
 from __future__ import print_function
 import json
 import parser
-import helper as h
+import datastore as d
 import logger
 import config
 import action as a
@@ -19,10 +19,10 @@ def display(query):
     results = []
     if query.replace(" ", "") == "":
         logger.log("display task list")
-        task_list = h.get_data_from_file(config.TASK_FILE_PATH)["tasks"]
+        task_list = d.get_data(config.TASK_FILE_PATH)
         for task in task_list:
             if task["state"] == a.ACTIVE_STATE:
-                result = new_result(task["title"], "Task", task["title"], icon=i.EDIT_ICON)
+                result = new_result(task["name"], "Task", task["name"], icon=i.EDIT_ICON)
                 results.append(result)
     else:
         argument = parser.generate_argument(a.ADD_TASK, query)
