@@ -1,0 +1,21 @@
+{
+    "default": {
+        "tinydb": {
+            "version": "==3.7.0",
+            "hash": "sha256:071105c339b44f928968cb4e62f7340a568beb9962a3dcda66eb82da9cab0b0a"
+        }
+    },
+    "develop": {},
+    "_meta": {
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ],
+        "requires": {},
+        "hash": {
+            "sha256": "35f61eb35fd829f2dfe992e52926fdce40bd6e904630218391633de3b11b79ca"
+        }
+    }
+}
