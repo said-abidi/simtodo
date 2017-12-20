@@ -1,2 +1,4 @@
 *.pyc
 app/tasklists/default.json
+.venv/
+SimTodo.egg-info/
